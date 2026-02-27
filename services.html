@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Prices | MAISON VÉLURE Hamburg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .menu-section {
+            margin-bottom: 6rem;
+        }
+
+        .menu-title {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-bottom: 1rem;
+            border-bottom: 1px dotted rgba(26, 26, 26, 0.2);
+            transition: var(--transition-fast);
+        }
+
+        .menu-item:hover {
+            transform: translateX(5px);
+            border-bottom-color: var(--color-champagne);
+            color: var(--color-champagne);
+        }
+
+        .menu-item-name {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .menu-item-price {
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: var(--color-champagne);
+        }
+
+        @media(max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-ivory">
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MAISON <span class="gold-text">VÉLURE</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services & Prices</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </header>
+
+    <!-- Creative Page Hero -->
+    <section class="page-hero" style="min-height: 450px;">
+        <div
+            style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(13, 13, 13, 0.95) 0%, rgba(13, 13, 13, 0.6) 100%); z-index: 1;">
+        </div>
+        <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=2071&auto=format&fit=crop"
+            alt="Services & Pricing" class="page-hero-bg">
+        <div class="page-hero-overlay" style="background: transparent;"></div>
+        <div class="page-hero-content fade-in-up"
+            style="text-align: left; max-width: 900px; margin: 0 auto; width: 100%;">
+            <p class="page-hero-subtitle text-white">Bespoke Treatments</p>
+            <h1 class="page-hero-title italic-serif text-white" style="font-size: 4rem; margin-top: 0.5rem;">Services &
+                Pricing
+            </h1>
+        </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- Women's Services -->
+            <div class="menu-section fade-in-up" id="women">
+                <h2 class="menu-title italic-serif">Ladies Styling</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span class="menu-item-name">Haircut & Styling</span>
+                        <span class="menu-item-price">€55</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Coloring</span>
+                        <span class="menu-item-price">€89</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Balayage</span>
+                        <span class="menu-item-price">€149</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Hair Treatment</span>
+                        <span class="menu-item-price">€39</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Intensive Hair Treatment</span>
+                        <span class="menu-item-price">€65</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Color Correction</span>
+                        <span class="menu-item-price">from €120</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Keratin Treatment</span>
+                        <span class="menu-item-price">€180</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Elegant Updos</span>
+                        <span class="menu-item-price">€85</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gold-divider center mb-5"></div>
+
+            <!-- Men's Services -->
+            <div class="menu-section fade-in-up dl-1" id="men">
+                <h2 class="menu-title italic-serif">Gentlemen's Grooming</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span class="menu-item-name">Haircut</span>
+                        <span class="menu-item-price">€35</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Fade Cut</span>
+                        <span class="menu-item-price">€39</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Beard Styling</span>
+                        <span class="menu-item-price">€19</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Hair & Beard Combo</span>
+                        <span class="menu-item-price">€49</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Premium Grooming Service</span>
+                        <span class="menu-item-price">€75</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="contact.html" class="btn btn-primary btn-large shadow-hover">Schedule Your Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-charcoal text-white">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo mb-2 d-inline-block" style="color:var(--color-white)">MAISON <span
+                            class="gold-text">VÉLURE</span></a>
+                    <p class="text-muted mt-2">A premium styling destination for ladies and gentlemen, defining luxury
+                        haircare in Hamburg.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Salon</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Portfolio</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#women">Ladies Styling</a></li>
+                        <li><a href="services.html#men">Gentlemen's Grooming</a></li>
+                        <li><a href="contact.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="imprint.html">Imprint</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-info-block">
+                        <span class="footer-info-label">Address</span>
+                        <div class="footer-info-text">Rungedamm 38<br>Hamburg</div>
+                    </div>
+                    <div class="footer-info-block">
+                        <span class="footer-info-label">Telefonnummer</span>
+                        <div class="footer-info-text"><a href="tel:15566284478" class="hover-light">155 6628 4478</a>
+                        </div>
+                    </div>
+                    <div class="footer-info-block">
+                        <span class="footer-info-label">Email</span>
+                        <div class="footer-info-text"><a href="mailto:info@maisonvelure.de"
+                                class="hover-light">info@maisonvelure.de</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maison Vélure. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
