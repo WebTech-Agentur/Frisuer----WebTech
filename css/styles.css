@@ -1265,15 +1265,18 @@ body.menu-open {
     }
 
     .hero-btns {
-        flex-direction: column;
-        gap: 1.2rem;
+        flex-direction: row;
+        gap: 8px;
         width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .hero-btns .btn {
-        width: 100%;
+        padding: 10px 14px !important;
+        font-size: 13px !important;
+        white-space: nowrap !important;
+        min-width: auto !important;
         margin: 0 !important;
     }
 
