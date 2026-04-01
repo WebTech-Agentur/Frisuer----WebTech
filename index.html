@@ -40,7 +40,7 @@
             </ul>
         </nav>
         <div class="nav-right">
-            <a href="kontakt.html" class="btn btn-gold btn-header">Termin buchen</a>
+            <a href="kontakt.html" class="btn btn-gold btn-header">Jetzt Termin Sichern</a>
             <div class="nav-toggle" id="navToggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -55,8 +55,8 @@
                 <p>Ihr Premium-Friseur in Moorhafen für exklusive Looks, individuelle Beratung und ein unvergleichliches
                     Wohlfühlerlebnis.</p>
                 <div class="hero-btns">
-                    <a href="kontakt.html" class="btn btn-gold">Termin buchen</a>
-                    <a href="leistungen.html" class="btn btn-outline">Unsere Services</a>
+                    <a href="kontakt.html" class="btn btn-gold">Jetzt Termin Sichern</a>
+                    <a href="kontakt.html" class="btn btn-outline">Jetzt Termin Sichern</a>
                 </div>
             </div>
         </section>
@@ -253,9 +253,7 @@
             <h2>Bereit für Ihren neuen Look?</h2>
             <p style="margin-bottom: 2rem;">Sichern Sie sich jetzt Ihren Wunschtermin und erleben Sie erstklassiges
                 Styling.</p>
-            <a href="kontakt.html" class="btn btn-gold btn-dynamic">
-                <span class="cta-dynamic-text">Jetzt Termin sichern</span>
-            </a>
+            <a href="kontakt.html" class="btn btn-gold">Jetzt Termin Sichern</a>
         </section>
     </main>
 
@@ -282,7 +280,7 @@
             <div class="footer-col">
                 <h4>Kontakt</h4>
                 <ul>
-                    <li><span style="color: var(--accent-gold); margin-right: 10px;">📍</span> Mecklenburg-Vorpommern <br> 53.705305, 12.536109</li>
+                    <li><span style="color: var(--accent-gold); margin-right: 10px;">📍</span> Mecklenburg-Vorpommern 53 705305</li>
                     <li><span style="color: var(--accent-gold); margin-right: 10px;">📞</span> +49 155 66284478</li>
                     <li><span style="color: var(--accent-gold); margin-right: 10px;">✉️</span> info@la-belle-le-beau.de
                     </li>
@@ -303,32 +301,7 @@
         </div>
     </footer>
 
-    <script>
-        const ctaTexts = [
-            "Termin buchen",
-            "Unsere Services",
-            "Jetzt Termin sichern",
-            "Stil erleben",
-            "Kontakt aufnehmen"
-        ];
 
-        let ctaIndex = 0;
-        const ctaElements = document.querySelectorAll(".cta-dynamic-text");
-
-        if (ctaElements.length > 0) {
-            setInterval(() => {
-                ctaElements.forEach(el => el.classList.add("text-fade-out"));
-
-                setTimeout(() => {
-                    ctaIndex = (ctaIndex + 1) % ctaTexts.length;
-                    ctaElements.forEach(el => {
-                        el.textContent = ctaTexts[ctaIndex];
-                        el.classList.remove("text-fade-out");
-                    });
-                }, 500);
-            }, 3000);
-        }
-    </script>
     <script src="js/mobile-menu.js"></script>
 </body>
 
